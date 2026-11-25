@@ -1,0 +1,14 @@
+name: MirTimePromo
+version: 1.0.0
+main: ru.mirtime.promo.MirTimePromo
+api-version: '1.21'
+authors: [Mir-Time]
+
+commands:
+  promo:
+    description: Активация и управление промокодами
+    aliases: [promocode, code]
+
+permissions:
+  mirtime.promo.admin:
+    default: op
