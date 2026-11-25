@@ -1,0 +1,20 @@
+settings:
+  # Сколько раз один IP-адрес может активировать один и тот же промокод (защита от твинков)
+  max-uses-per-ip: 10
+  # Минимальное отыгранное время на сервере в минутах (0 = отключить)
+  min-playtime-minutes: 0
+
+promos:
+  MAX2026:
+    max-uses: -1 # -1 = безлимитный промокод
+    display: "&#00E5FFБонус из мессенджера MAX"
+    commands:
+      - "eco give %player% 5000"
+      - "points give %player% 50"
+      - "bcases give %player% default 1"
+  START2026:
+    max-uses: 100
+    display: "&#00FF66Стартовый набор новичка"
+    commands:
+      - "eco give %player% 2500"
+      - "give %player% golden_apple 8"
